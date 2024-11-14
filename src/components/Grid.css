@@ -1,0 +1,56 @@
+/* Style for the score display */
+.score {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Button to start/stop the game */
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(20, 40px); /* 20 columns of 40px width */
+    grid-template-rows: repeat(15, 40px); /* 15 rows of 40px height */
+    gap: 2px;
+    margin-top: 20px;
+    justify-content: center; /* Center the grid */
+  }
+  
+  .cell {
+    width: 40px; /* Set cell width to 40px */
+    height: 40px; /* Set cell height to 40px */
+    display: inline-flex; /* Center content using flexbox */
+    justify-content: center; /* Horizontally center text */
+    align-items: center; /* Vertically center text */
+    background-color: #f4f4f4; /* Light gray background color */
+    border: 2px solid #333; /* Dark border color for visibility */
+    font-size: 16px; /* Set font size */
+    font-weight: bold; /* Make text bold */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.2s ease-in-out; /* Smooth transition for all changes */
+  }
+  
+  .cell:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7); /* Glow effect on hover */
+  }
+  
+  
+  
